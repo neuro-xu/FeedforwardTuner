@@ -68,8 +68,8 @@ void FeedforwardTuner::ComputeOLS() {
     float sumX=0, sumY=0, sumXY=0, sumXX=0;
 
     for (int i=0; i<_N; i++) {
-        float x = _cv[i];
-        float y = _pv[i];
+        float x = _pv[i];
+        float y = _cv[i];
         sumX  += x;
         sumY  += y;
         sumXY += x*y;
